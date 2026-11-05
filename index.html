@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071a2f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ヨット部財務">
+  <title>ヨット部 財務管理</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./app-icon.png">
+  <link rel="icon" type="image/png" href="./app-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <style>
+    :root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic",sans-serif;background:#f4f7f9;color:#172331}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(180deg,#eef4f8,#fff)}
+    main{width:min(100%,430px);text-align:center;background:#fff;border:1px solid #dce5eb;border-radius:18px;padding:32px 24px;box-shadow:0 14px 36px rgba(16,44,76,.12)}
+    img{width:112px;height:112px;border-radius:25px;display:block;margin:0 auto 22px}h1{font-size:24px;margin:0 0 12px}p{color:#667788;line-height:1.7;margin:0 0 22px}
+    a{display:block;padding:15px 18px;border-radius:11px;background:#2e6fa3;color:#fff;text-decoration:none;font-weight:700;font-size:17px}
+    small{display:block;color:#7a8995;margin-top:18px;line-height:1.6}
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./app-icon.png" alt="ヨット部財務アプリアイコン">
+    <h1>ヨット部 財務管理</h1>
+    <p>Safariの共有ボタンから「ホーム画面に追加」を選んでください。</p>
+    <a href="https://script.google.com/macros/s/AKfycbyfeYjVDOOKFJBAJbdToxtyPA_-IFxXpC66CWd_6xZzaqsN4qgxI-wfFX7Pm9lrU7DE/exec">財務アプリを開く</a>
+    <small>ホーム画面から起動した場合は、自動的に財務アプリを開きます。</small>
+  </main>
+  <script>
+    const appUrl='https://script.google.com/macros/s/AKfycbyfeYjVDOOKFJBAJbdToxtyPA_-IFxXpC66CWd_6xZzaqsN4qgxI-wfFX7Pm9lrU7DE/exec';
+    if(window.navigator.standalone===true||window.matchMedia('(display-mode: standalone)').matches)window.location.replace(appUrl);
+  </script>
+</body>
+</html>
